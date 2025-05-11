@@ -42,7 +42,7 @@ export default function ComponentsSection() {
     },
     {
       id: "water-tracker",
-      name: "Water Conservation Tracker",
+      name: "Water Conservation Monitor",
       description: "Monitor water usage and conservation efforts",
     },
   ]
@@ -57,10 +57,10 @@ export default function ComponentsSection() {
           </motion.div>
         </div>
 
-        <div className="mx-auto max-w-5xl">
+        <div className="mx-auto max-w-[1600px]">
           <Tabs defaultValue="carbon-tracker" value={activeTab} onValueChange={setActiveTab} className="w-full">
             <div className="mb-8">
-              <TabsList className="mx-auto grid max-w-lg grid-cols-2 bg-muted/50 sm:grid-cols-4">
+              <TabsList className="mx-auto grid max-w-6xl grid-cols-2 bg-muted/50 sm:grid-cols-4">
                 {components.map((component) => (
                   <TabsTrigger key={component.id} value={component.id}>
                     {component.name}
